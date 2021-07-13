@@ -1,14 +1,10 @@
-<!-- _coverpage.md -->
+![logo](https://docsify.js.org/_media/icon.svg)
 
-![logo](_media/icon.svg)
+# 麦兜
 
-# docsify <small>3.5</small>
+- 本文档是作者从事Java Developer以来的学习历程，旨在为大家
+- 提供一个较详细的学习教程，另一方面是
+- 对过去的总结，方便以后查阅
 
-> A magical documentation site generator.
-
-- Simple and lightweight
-- No statically built html files
-- Multiple themes
-
-[GitHub](https://github.com/docsifyjs/docsify/)
-[Get Started](#docsify)
+[GitHub](https://github.com/dqcer/docs.git)
+[Get Started](zh-cn/quick-start.md)
