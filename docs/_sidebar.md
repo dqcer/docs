@@ -10,3 +10,5 @@
       1. [实用插件](developtools/idea-plus.md)
 3. 版本管理
     1. [开发模式](version/dev-model.md)
+4. 编码规范
+    1. [Java规范](constraint/java-word.md)
