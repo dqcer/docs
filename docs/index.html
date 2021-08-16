@@ -2,13 +2,18 @@
 <html lang="zh">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>麦兜</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
 </head>
 <body>
+<nav>
+  <a href="https://throwx.cn">🐮🐮 Throwable's Blog</a>
+  <a href="https://spring.throwx.cn">❤️❤️ Spring专栏</a>
+</nav>
+
 <!--滚动条解决办法-->
 <style type="text/css">
   .content {
@@ -16,6 +21,7 @@
   }
 </style>
   <div id="app">加载中...</div>
+
   <script>
     window.$docsify = {
       name: '麦兜',
@@ -26,6 +32,7 @@
       coverpage: true,
       //  导航栏
       loadNavbar: true,
+      search: 'auto',
       // 搜索-完整配置参数
       search: {
         maxAge: 86400000, // 过期时间，单位毫秒，默认一天
@@ -37,7 +44,6 @@
       // 默认折叠的层级
       sidebarDisplayLevel: 9,
       auto2top: true,
-      topMargin: 40,
       // 字数统计
       count:{
         countable:true,
@@ -45,18 +51,22 @@
         color:'rgb(90,90,90)',
         language:'chinese'
       },
+      disqus: 'shortname'
     }
   </script>
+
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
   <!--搜索-->
   <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
   <!--侧边栏折叠-->
   <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
   <!--字数统计-->
   <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
-
+  <!--java代码高亮-->
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1.24.1/components/prism-java.min.js"></script>
+  <!--复制到剪贴板-->
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
 </body>
 </html>

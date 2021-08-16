@@ -6,5 +6,5 @@
 - 提供一个较详细的学习教程，另一方面是
 - 对过去的总结，方便以后查阅
 
-[GitHub](https://github.com/dqcer/docs.git)
-[Get Started](zh-cn/quick-start.md)
+[:octocat:GitHub](https://github.com/dqcer/docs.git)
+[:dart:Get Started](enterprise/path-matcher.md)
