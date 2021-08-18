@@ -3,6 +3,8 @@
         * [数据类型](java/data-type.md)
         * [包装类型](java/pack-type.md)
         * [缓存机制](java/cache-mechanism.md)
+* [Spring 框架](#)
+    * [@Value默认值映射](spring/value-def.md)
 * [:wrench:开发工具](#)
     * [IDEA](#)
         * [实用插件](developtools/idea-plus.md)
