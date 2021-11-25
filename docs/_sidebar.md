@@ -1,5 +1,6 @@
 * [:coffee:Java 编程](#)
     * [基础知识](#)
+        * [创建和销毁对象](java/object.md)
         * [数据类型](java/data-type.md)
         * [包装类型](java/pack-type.md)
         * [缓存机制](java/cache-mechanism.md)
