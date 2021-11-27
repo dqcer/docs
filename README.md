@@ -5,11 +5,6 @@
 - 提供一个较详细的学习教程，另一方面是
 - 对过去的总结，方便以后查阅
 
-无论是个人、团队、或是企业，都能够用 Gitee 实现代码托管、项目管理、协作开发。企业项目请看 [https://gitee.com/enterprises](https://gitee.com/enterprises)
-
-#### 软件架构
-软件架构说明
-
 #### 安装教程
 1.  全局安装docsify
 `npm i docsify-cli -g`
@@ -17,9 +12,10 @@
 
 #### 使用说明
 
-1、进入到docs目录下
+- 进入到docs目录下
 `cd docs`
-2、启动
+
+- 启动
 `docsify serve`
 
 #### 参与贡献
