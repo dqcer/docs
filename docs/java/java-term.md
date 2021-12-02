@@ -83,6 +83,9 @@ happens-before
 
 DCL => double check lock (双重检查锁)
 
+//  返回一下，又进入到等待状态
+Thread.yield();
+
 ```java
     if(INSTANCE == null) {
         synchronized(Demo.class) {
@@ -107,3 +110,7 @@ DCL => double check lock (双重检查锁)
 > -  代码复用：RPC的调用场景 差异化小，proxy层复用，提高开发效率；
 > -  提供便利性：调用方可以直接调用，对RPC结果可以直接使用，不需要考虑NPE（结果为空）、RPC异常等情况
 
+
+
+- 享元模式
+本质上其实就是一个对象池，利用享元模式创建对象的逻辑也很简单：创建之前，首先去对象池里看看是不是存在；如果已经存在，就利用对象池里的对象；如果不存在，就会新创建一个对象，并且把这个新创建出来的对象放进对象池里
