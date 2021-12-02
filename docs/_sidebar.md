@@ -11,6 +11,8 @@
   - [**缓存机制**](java/cache-mechanism.md)
   - [**命名习惯**](#)
     - [**方法命名**](java/name.md)
+- [:coffee:**数据库**](#)
+  - [**编码建议**](database/sql-habit.md)
 - [**Spring 框架**](#)
   - [**@Value默认值映射**](spring/value-def.md)
   - [**计时器工具类**](spring/stop-watch.md)
