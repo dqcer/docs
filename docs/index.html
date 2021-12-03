@@ -22,7 +22,12 @@
 </style>
   <div id="app">加载中...</div>
 
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.css">
+  <script src="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
   <script>
+    var num = 0;
+    mermaid.initialize({ startOnLoad: false });
+
     window.$docsify = {
       name: '麦兜',
       repo: 'https://github.com/dqcer/docs.git',
@@ -51,7 +56,29 @@
         color:'rgb(90,90,90)',
         language:'chinese'
       },
-      disqus: 'shortname'
+      disqus: 'shortname',
+      markdown: {
+        renderer: {
+          code: function(code, lang) {
+            // 判断语言是否为 mermaid
+            if (lang === "mermaid") {
+              // 将div 返回
+              return (
+                      '<div class="mermaid">' + mermaid.render('mermaid-svg-' + num++, code) + "</div>"
+              );
+            }
+            if (lang === "dot") {
+              return (
+                      '<div class="viz">'+ Viz(code, "SVG")+'</div>'
+              );
+            }
+            return this.origin.code.apply(this, arguments);
+          }
+        }
+      },
+      plantuml: {
+        skin: 'default',
+      },
     }
   </script>
 
@@ -70,5 +97,8 @@
   <script src="//cdn.jsdelivr.net/npm/prismjs@1.24.1/components/prism-sql.min.js"></script>
   <!--复制到剪贴板-->
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+
+<script src="https://cdn.bootcss.com/viz.js/1.8.0/viz.js"></script>
+<script src="//unpkg.com/docsify-plantuml/dist/docsify-plantuml.min.js"></script>
 </body>
 </html>

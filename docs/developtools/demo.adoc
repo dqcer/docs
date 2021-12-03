@@ -1,0 +1,54 @@
+[quote, 林肯, 第XX任美国总统]
+____
+Four score and seven years ago our fathers brought forth
+on this continent a new nation...
+____
+
+:icons: font
+
+NOTE: 备注
+
+TIP: 提示
+
+IMPORTANT: 重要
+
+WARNING: 警告
+
+CAUTION: 当心
+
+
+
+:source-highlighter: pygments
+.index.html
+[source, html, subs="verbatim, attributes"]
+....
+<div> // <1>
+  <p>{author}</p>
+</div>
+....
+<1> 标注信息
+
+
+:experimental:
+kbd:[Ctrl+T]
+
+kbd:[Command+Options+Control+T]
+
+kbd:[⌘+N]
+
+
+[source%nowrap,java]
+----
+public class ApplicationConfigurationProvider extends HttpConfigurationProvider
+{
+   @Override
+   public Configuration getConfiguration(ServletContext context)
+   {
+      return ConfigurationBuilder.begin()
+               .addRule()
+               .when(Direction.isInbound().and(Path.matches("/{path}")))
+               .perform(Log.message(Level.INFO, "Client requested path: {path}"))
+               .where("path").matches(".*");
+   }
+}
+----
