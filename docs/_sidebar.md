@@ -8,6 +8,7 @@
       - [**2、多个构造器参数**](java/constructor.md)
       - [**3、私有构造器和枚举强化单例**](java/singleton.md)
       - [**4、私有构造器处理不可实例化对象**](java/no-instance.md)
+  - [**多线程**](java/thread.md)
   - [**数据类型**](java/data-type.md)
   - [**包装类型**](java/pack-type.md)
   - [**缓存机制**](java/cache-mechanism.md)
